@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Etapa 1: Extração - Lendo o arquivo CSV
+file_path = 'vendas.csv'
+df = pd.read_csv(file_path)
+
+# Etapa 2: Transformação - Realizando algumas operações de transformação nos dados
+# Por exemplo, calcular o total de cada venda
+df['total_venda'] = df['quantidade'] * df['preco_unitario']
+
+# Etapa 3: Carga - Salvar os dados transformados em um novo arquivo CSV
+output_file_path = 'vendas_realizadas.csv'
+df.to_csv(output_file_path, index=False)
+
+print(f'Dados transformados salvos em {output_file_path}')
+
