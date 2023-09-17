@@ -1,0 +1,5 @@
+data_venda;produto;quantidade;preco_unitario;cliente;total_venda
+17/08/2023;monitor;2;600;Livya;1200
+17/08/2023;teclado;1;250;Robson;250
+17/08/2023;notebook;4;4500;LivsRobs;18000
+;;;;;
